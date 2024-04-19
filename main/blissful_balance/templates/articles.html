@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+
+{% block title %}DPDR Page{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<section>
+    <header class="text-center text-6xl mt-3 mb-16">Helpful <span class="text-purple-500">Articles</span></header>
+</section>
+
+<!-- First 2 Articles -->
+<section>
+    <div class="flex justify-center items-center border border-green-500">
+        <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+          <a class="flex flex-col items-center" href="article1.html">
+            <img class="object-cover border border-green-500" src="./images/exited_brain.jpeg" alt="Description">
+            <p>
+                Existential OCD: When Life’s Big Questions Plague You
+            </p>
+          </a>
+        </div>
+        <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+          <a class="flex flex-col items-center" href="article1.html">
+            <img class="object-cover border border-green-500" src="./images/exited_brain.jpeg" alt="Description">
+            <p>
+                Existential OCD: When Life’s Big Questions Plague You
+            </p>
+          </a>
+        </div>
+    </div>
+</section>
+
+<!-- Second 2 Articles -->
+<section>
+  <div class="flex justify-center items-center border border-green-500">
+      <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+        <a class="flex flex-col items-center" href="article1.html">
+          <img class="object-cover border border-green-500" src="./images/exited_brain.jpeg" alt="Description">
+          <p>
+              Existential OCD: When Life’s Big Questions Plague You
+          </p>
+        </a>
+      </div>
+      <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+        <a class="flex flex-col items-center" href="article1.html">
+          <img class="object-cover border border-green-500" src="./images/exited_brain.jpeg" alt="Description">
+          <p>
+              Existential OCD: When Life’s Big Questions Plague You
+          </p>
+        </a>
+      </div>
+  </div>
+</section>
+
+{% endblock %}

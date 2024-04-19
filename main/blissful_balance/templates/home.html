@@ -1,0 +1,249 @@
+{% extends 'base.html' %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+{% load static %}
+  <!-- Intro section -->
+  <section class="bg-cover bg-no-repeat flex py-52" style="background-image: url({% static 'images/floating_surface.jpg' %});">
+    <!-- Left -->
+    <div class="w-1/2 flex-col">
+      <header class="text-center text-6xl mt-3 mb-16">Blissful <span class="text-purple-500">Balance</span></header>
+      <header class="text-center text-4xl mt-1">Free Yourself From Any Anxiety Disorder</header>
+      <div class="flex justify-center">
+        <p class="w-[75%] text-center py-3 px-10 mt-2 text-lg">
+          Move beyond just managing, dealing, or coping with anxiety; it's time to break free. At FreeMind, 
+          we believe in your potential to redefine your normal. Experience a transformative journey toward 
+          a life of calmness, confidence, and liberation from anxiety - all 100% free.
+        </p>
+      </div>
+    </div>
+    <!-- Right -->
+    <div class="w-1/2">
+      <div class="flex flex-row justify-center gap-16">
+        <img class="intro_image object-cover w-1/5 h-1/5" src="{% static 'images/intr0_icon1.png' %}" alt="Description">
+        <img class="intro_image object-cover w-1/5 h-1/5" src="{% static 'images/intr0_icon.png' %}" alt="Description">
+      </div>
+      <div class="flex justify-center mt-10">
+        <img class="intro_image object-cover w-1/5 h-1/5" src="{% static 'images/intr0_icon2.png' %}" alt="Description">
+      </div>
+    </div>
+
+     <!-- Image Hover Effect-->
+      <!-- https://www.youtube.com/watch?v=paGPv7x5onY -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+      <script>
+        VanillaTilt.init(document.querySelectorAll(".intro_image"), {
+          max: 25,
+          speed: 1000,
+          transition: true,
+        })
+      </script>
+  </section>
+
+  <!-- Welcome section -->
+  <section class="flex justify-center py-40">
+      <div class="w-[98%] flex flex-row justify-center">
+        <!-- Left -->
+        <div class="w-[22.5%] flex justify-center items-center">
+          <img class="object-cover w-[85%] h-[85%]" src="{% static 'images/brain_anxious-removebg-preview.png' %}" alt="Description">
+        </div>
+        <!-- Center -->
+        <div class="w-[55%] flex flex-col items-center">
+          <header class="text-center text-5xl mt-1">Welcome to Blissful <span class="text-purple-500">Balance</span></header>
+          <p class="w-[75%] text-center py-3 mt-10 text-lg ">
+            Here at FreeMind, we use a combination of effective self-help therapy, which includes crucial CBT (Cognitive Behavioral Therapy) methods. 
+            In addition, we provide stress management techniques and personalized online support among other resources.
+          </p>
+          <div class="flex justify-center">
+            <img class="" loading="lazy" width="30" height="100" src="{% static 'images/check-mark.png' %}" alt="check">
+          </div>
+          <p class="w-[75%] text-center py-3 mt-3 text-lg">
+            I personally understand the battle with anxiety, having once suffered from severe anxiety, panic attacks, OCD, and 
+            depersonalization and derealization disorder. A year later, I have made an almost complete recovery!
+          </p>
+          <div class="flex justify-center">
+            <img class="" loading="lazy" width="30" height="100" src="{% static 'images/check-mark.png' %}" alt="check">
+          </div>
+          <p class="w-[75%] text-center py-3 mt-3 text-lg">
+            FreeMind Recovery offers a comprehensive, scientifically backed anxiety recovery program, along with several 
+            resources and tools designed to guide you towards a full and lasting recovery.
+          </p>
+        </div>
+        <!-- Right -->
+        <div class="w-[22.5%] flex justify-center items-center">
+          <img class="object-cover w-[80%] h-[80%]" src="{% static 'images/brain_anxious2-removebg-preview.png' %}" alt="Description">
+        </div>
+      </div>
+  </section>
+    
+  <!-- Member benefits section -->
+  <section class="bg-cover bg-no-repeat bg-fixed flex py-32" style="background-image: url({% static 'images/bottom_up3.jpg' %});">
+    <!-- Left -->
+    <div class="w-[50%] flex justify-center items-center">
+      <img class="object-cover w-[50%] h-[55%]" src="{% static 'images/exited_brain-removebg.png' %}" alt="Description">
+    </div>
+  <!-- Right -->
+    <div class="w-[50%]">
+        <div class="order-1 lg:order-2 flex justify-center">
+        <div class="bg-gray-100 bg-opacity-5 backdrop-blur-md dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024]">
+            <header class="text-center font-extrabold text-4xl mt-1">Recovery <span class="text-purple-500">Support</span></header>
+            <header class="text-center font-extrabold text-4xl mt-3"><span class="text-cyan-300">Member</span> Benefits</header>
+
+            <div class="flex items-center">
+              {% load static %}
+            <img class="" loading="lazy" width="30" height="100" src="{% static 'images/check-mark.png' %}" alt="check">
+            <p class="py-3 mt-5 text-center text-lg ml-3">
+                Exclusive access to a full anxiety disorder recovery program that includes anxiety information, symptoms, relaxation techniques, recovery strategies, relaxation audio, and much more.
+            </p>
+            </div>
+
+            <div class="flex items-center">
+              {% load static %}
+            <img class="" loading="lazy" width="30" height="100" src="{% static 'images/check-mark.png' %}" alt="check">
+            <p class="py-3 mt-2 text-center text-lg ml-3">
+                Online forums to share your experiences, ask questions, and connect with other support members.
+            </p>
+            </div>
+
+            <div class="flex items-center">
+              {% load static %}
+            <img class="" loading="lazy" width="30" height="100" src="{% static 'images/check-mark.png' %}" alt="check">
+            <p class="py-3 mt-2 text-center text-lg ml-3">
+                Direct access to one of our team members through email for personalized support and guidance.
+            </p>
+            </div>
+
+            <div class="flex items-center">
+              {% load static %}
+            <img class="" loading="lazy" width="30" height="100" src="{% static 'images/check-mark.png' %}" alt="check">
+            <p class="py-3 mt-2 text-center text-lg ml-3">
+                New Feature! Gain immediate insights and guidance from our Anxiety Recovery Chatbot. Ask our chatbot anything related to Anxiety, OCD, and DPDR.
+            </p>
+            </div>
+
+            <p class="text-center font-extrabold text-lg mt-3">
+            Register for FREE Today!
+            </p>
+            <div class="flex justify-around mt-3 md:justify-center md:gap-24">
+            <a href="#">
+                <button class="bg-gradient-to-r from-purple-500 to-blue-500 hover:text-white hover:bg-purple-600 rounded-full py-3 px-6 mt-4 font-medium text-white w-40 xl:w-48">Start your recovery today!</button>
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+    
+  <!-- AI Chatbot section -->
+  <section class="flex justify-center py-52">
+  <div class="w-[90%] h-full flex justify-center gap-5">
+      <!-- Left -->
+      <div class="w-[40%] flex justify-center">
+      <div class="bg-gray-50 dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl px-10 py16 shadow-[30px_30px_10px_10px_#00000024]">
+          <header class="text-center font-extrabold text-4xl mt-1">Discover Instant Help with Our Anxiety <span class="text-purple-500">Recovery AI</span></header>
+          <p class="text-center py-3 mt-5 text-lg">
+          Step into the future of mental health support with our unique Anxiety Recovery Chatbot. Trained to understand the complexities of anxiety, OCD, and DPDR, 
+          this AI is ready to answer your questions at any time. Gain immediate insights, receive guidance, and find comfort in its empathetic responses. 
+          Let our chatbot be your companion on this journey towards self-awareness and recovery.
+          </p>
+          <div class="mt-5 flex justify-center">
+          <img class="w-52 h-52" loading="lazy" src="{% static 'images/brain_in_bulb-removebg-preview.png' %}" alt="check">
+          </div>
+      </div>
+      </div>
+      <!-- Right -->
+      <div class="w-[60%] flex justify-center items-center">
+        <video class="rounded-3xl shadow-[30px_30px_10px_10px_#00000024] hidden md:block md:w-auto h-auto md:h-64 lg:w-auto lg:h-auto" autoplay="" muted="" playsinline=""><source src="{% static 'videos/laptop_animation.mp4' %}" type="video/webm">Your browser does not support the video tag.</video>
+      </div>
+  </div>
+  </section>
+    
+  <!-- Relax Audio section -->
+  <section class="flex justify-center pb-52">
+    <div class="w-[90%] h-full flex justify-center gap-5">
+      <!-- Left -->
+      <div class="w-[60%] flex justify-center bg-white">
+        {% load static %}
+      <video class="rounded-3xl shadow-[30px_30px_10px_10px_#00000024] hidden md:block w-full md:w-auto h-auto md:h-64 lg:w-auto lg:h-auto" autoplay="" muted="" playsinline=""><source src="{% static 'videos/phone_animation.mp4' %}" type="video/webm">Your browser does not support the video tag.</video>
+      </div>
+      <!-- Center -->
+      <div class="w-[40%] flex justify-center">
+      <div class="bg-gray-50 dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl px-10 py16 shadow-[30px_30px_10px_10px_#00000024]">
+          <header class="text-center font-extrabold text-4xl mt-1">Relaxation <span class="text-purple-500">Audio</span> Accessible Anywhere, Anytime </header>
+          <p class="text-center mt-5 text-lg">
+          Discover instant peace with our exclusive relaxation audios, accessible anytime, anywhere. Our user-friendly interface ensures a seamless 
+          experience, letting you immerse in soothing sounds quickly. Turn to our curated audios during panic attacks, anxiety, DPDR, or any stressful moments. 
+          We continually expand our collection, adding new audios regularly for your comfort and peace.
+          </p>
+          <div class="mt-5 flex justify-center">
+          <a>
+            {% load static %}
+            <img class="w-[200px] h-[200px]" loading="lazy" src="{% static 'images/music_notes-bgremoved.png' %}" alt="check">
+          </a>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+    
+  <!-- About section -->
+  <!-- BG Image -->
+  <section class="bg-cover bg-no-repeat bg-fixed flex flex-col" style="background-image: url({% static 'images/bottom.jpg' %});">
+    <section class="flex pt-52">
+        <!-- Left -->
+        <div class="w-1/2">
+          <div class="flex flex-row justify-center gap-16">
+            <img class="about_image object-cover w-1/5 h-1/5" src="{% static 'images/intr0_icon1.png' %}" alt="Description">
+            <img class="about_image object-cover w-1/5 h-1/5" src="{% static 'images/intr0_icon1.png' %}" alt="Description">
+          </div>
+          <div class="flex justify-center mt-10">
+            <img class="about_image object-cover w-1/5 h-1/5" src="{% static 'images/intr0_icon2.png' %}" alt="Description">
+          </div>
+        </div>
+        <!-- Right -->
+        <!-- <div class="bg-slate-700 bg-opacity-70 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 ml-16 text-white shadow-[30px_30px_10px_10px_#00000024]"> -->
+        <div class="text-white w-[370px] md:w-[500px] xl:w-[900px] pr-32">
+          <header class="text-center font-extrabold text-6xl mt-1"><span class="text-purple-400">About </span>Blissful Balance</header>
+          <p class="text-center py-10 mt-5 text-xl">
+              Hello there! I'm Jared, a software engineer who loves building websites and software, exploring new places, hiking, and playing many sports. 
+              But I'm also much more than that – I'm the creator and founder of FreeMind. You see, not too long ago, I was a different person, living a different life. 
+              I never imagined I'd find myself grappling with serious mental health disorders that would change the course of my life. 
+          </p>
+        </div>
+
+        <!-- Image Hover Effect-->
+        <!-- https://www.youtube.com/watch?v=paGPv7x5onY -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+        <script>
+          VanillaTilt.init(document.querySelectorAll(".about_image"), {
+            max: 25,
+            speed: 1000,
+            transition: true,
+          })
+        </script>
+    </section>
+
+    <!-- Testimonial section -->
+    <section class="flex flex-col items-center pt-40 pb-52 mt-52 bg-white bg-opacity-10 backdrop-blur-md">
+        <header class="text-center font-extrabold text-4xl text-white mb-8">Testimonials</header>
+        <div class="flex justify-center">
+          <div class="w-3/5 flex flex-col bg-slate-100 dark:bg-cyan-900 rounded-3xl p-10 shadow-[15px_15px_5px_5px_#00000024]">
+              <div class="flex justify-center items-center">
+                {% load static %}
+              <img class="rounded-full mr-5" loading="lazy" width="100" height="100" src="{% static 'images/exited_brain.jpeg' %}" alt="check">
+              <header class="text-center font-extrabold text-2xl mt-1"><span class="text-purple-500">John </span>Doe</header>
+              </div>
+              <p class="text-center py-3 mt-5 text-lg">
+              " Discover instant peace with our exclusive relaxation audios, accessible anytime, anywhere. Our user-friendly interface ensures a seamless 
+              experience, letting you immerse in soothing sounds quickly. Turn to our curated audios during panic attacks, anxiety, DPDR, or any stressful moments. 
+              We continually expand our collection, adding new audios regularly for your comfort and peace. "
+              </p>
+          </div>
+        </div>
+    </section>
+
+  </section>
+
+{% endblock %}
+

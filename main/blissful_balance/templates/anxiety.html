@@ -1,0 +1,436 @@
+{% extends 'base.html' %}
+
+{% block title %}Anxiety Page{% endblock %}
+
+{% block content %}
+{% load static %}
+<!-- Intro section -->
+<section class="flex flex-row">
+    <div class="flex flex-col items-center">
+        <header class="text-center font-extrabold text-4xl mt-10">Are you or a loved one suffering from debilitating  <span class="text-purple-500">anxiety </span>?</header>
+        <header class="text-center font-extrabold text-2xl mt-5">Let's dive deeper into what anxiety is and the different types of anxiety disorders.</header>
+        <div class="flex flex-col items-center justify-center mt-16">
+            <header class="text-center font-extrabold text-3xl mt-1">What is Anxiety?</header>
+            <p class="w-3/5 text-center py-3 mt-3 text-lg">
+                Anxiety is an emotion characterized by feelings of tension, worried thoughts, and physical changes like increased blood pressure.
+                Anxiety is a common human emotion characterized by feelings of fear, worry, and apprehension.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Anxiety Disorders section -->
+<section class="bg-gray-100 bg-opacity-5 backdrop-blur-md">
+    <!-- Top -->
+    <div class="flex flex-col items-center dark:bg-cyan-900 p-10 my-10">
+    <img class="w-40 mt-5" src="{% static 'images/intr0_icon.png' %}" alt="Description">
+    <div class="w-3/5">
+        <p class="text-center py-3 mt-5 text-lg">
+        We hear the term thrown around all the time. "I am feeling so anxious." "I have test taking anxiety." 
+        "I am feeling a bit anxious before this job interview." You see, mild anxiety is a common and normal 
+        human emotion that many people experience in response to stressors or challenging situations. 
+        </p>
+        <div class="flex justify-center">
+        </div>
+        <p class="text-center py-3 mt-5 text-lg">
+        It is a natural and adaptive response that can help people cope with stress and avoid danger. 
+        Having mild anxiety is usually never a cause for concern; it's the body's way of coping with danger.
+        </p>
+        <div class="flex justify-center">
+        </div>
+        <p class="text-center py-3 mt-5 text-lg">
+        You probably aren't on our website experiencing mild anxiety; you are most likely here due to your anxiety getting out of control. 
+        If anxiety becomes excessive, persistent, or interferes with daily functioning, it may be indicative of an anxiety disorder. 
+        Let's explore what anxiety disorders are and the key differences between them and mild normal anxiety.
+        </p>
+        </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="flex flex-col items-center dark:bg-cyan-900 p-10 my-10">
+        <div class="w-3/5">
+        <header class="text-center font-extrabold text-4xl mt-5">Anxiety <span class="text-purple-500">Disorders</span></header>
+        <p class="text-center py-3 mt-5 text-lg">
+            Anxiety disorder is a broad term to describe a more specific issue. Anxiety disorders are a group of mental health conditions 
+            characterized by excessive and persistent feelings of fear, worry, or dread that can interfere with job performance, school work, 
+            daily activities, and relationships. For most people with anxiety disorders, the anxiety does not go away and can worsen over time. 
+            There are several types of anxiety disorders, and people can suffer from just one or many different anxiety disorders.
+        </p>
+        </div>
+    </div>
+</section>
+
+<!-- List of Anxiety Disorders section -->
+<section class="my-52">
+    <header class="text-center font-extrabold text-4xl mt-10">List of Anxiety <span class="text-purple-500">Disorders</span></header>
+    {% load static %}
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:md:grid-cols-3 rounded-lg m-10 gap-10 bg-cover bg-no-repeat bg-fixed shadow-[30px_30px_10px_10px_#00000024]" style="background-image: url({% static 'images/backdropImage.jpg' %});">
+
+    <!-- Block 1 -->
+    <div class="w-full bg-gray-100 bg-opacity-5 backdrop-blur-md rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- Image -->
+        <!-- <div class="group overflow-hidden bg-[#191F13] rounded-t-lg border border-red-500">
+        <img class="object-cover transition-all group-hover:rotate-12 group-hover:scale-125 duration-700" src="/images/bottom_up.jpg" alt="" />
+        </div> -->
+        <!-- Content -->
+        <div class="p-5 text-white">
+        <div>
+            <header class="text-start font-extrabold text-2xl mt-1">Generalized <span class="text-purple-500">Anxiety</span>Disorder (GAD)</header>
+        </div>
+        <p class="py-3 mt-1 text-start text-base">
+            Generalized Anxiety Disorder is a mental health condition characterized by persistent and excessive worry about a variety of different things, 
+            such as health, work, or relationships. The worry is often difficult to control and can cause significant distress and impairment in daily functioning. 
+            This is not to be confused with mild anxiety or occasional worrying over life events. People that suffer from GAD are plagued with constant worry and 
+            anxiety that lasts for several months.
+        </p>
+        <!-- Read More Content -->
+        <div id="more_text_block1" class="hidden">
+            <header class="text-start font-extrabold text-2xl mt-1">GAD <span class="text-purple-500">Symptoms</span></header>
+            <p class="py-1 mt-2 text-start text-base">
+            Some of the many GAD symptoms include restlessness, feeling on edge, or being easily fatigued.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Excessive and persistent worry about everyday events, activities, or responsibilities, even when there is no obvious reason to worry.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Difficulty controlling worry or stopping anxious thoughts. And many more symptoms.
+            </p>
+        </div>
+        <!-- Read More Button -->
+        <div id="toggle-btn_block1" class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        <div id="hide-btn_block1" class="hidden inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show less
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        </div>
+    </div>
+
+    <!-- Block 2 -->
+    <div class="w-full bg-gray-100 bg-opacity-5 backdrop-blur-md rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- Image -->
+        <!-- <div class="group overflow-hidden bg-[#191F13] rounded-t-lg">
+        <img class="object-cover transition-all group-hover:rotate-12 group-hover:scale-125 duration-700" src="https://cdn.pixabay.com/photo/2022/08/17/15/46/family-7392843_960_720.jpg" alt="" />
+        </div> -->
+
+        <!-- Content -->
+        <div class="p-5 text-white">
+        <div>
+            <header class="text-start font-extrabold text-2xl mt-1">Phobias</header>
+        </div>
+        <p class="py-3 mt-1 text-start text-base">
+            Phobias are a type of anxiety disorder characterized by an intense, irrational, and persistent 
+            fear of a specific object or situation, such as flying, heights, or spiders. The fear is often 
+            disproportionate to the actual danger posed by the object or situation and can lead to avoidance 
+            behaviors that interfere with daily activities and relationships.
+        </p>
+        
+        <!-- Read More Content -->
+        <div id="more_text_block2" class="hidden">
+            <header class="text-start font-extrabold text-2xl mt-1">Phobias <span class="text-purple-500">Symptoms</span></header>
+            <p class="py-1 mt-2 text-start text-base">
+            Intense fear or anxiety in response to a specific object or situation, which may be out 
+            of proportion to the actual threat posed by the object or situation.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Avoidance of the object or situation that triggers the fear or anxiety.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Preoccupation with the object or situation that triggers the fear or anxiety.
+            </p>
+        </div>
+
+        <!-- Read More Button -->
+        <div id="toggle-btn_block2" class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        <div id="hide-btn_block2" class="hidden inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show less
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        </div>
+    </div>
+
+    <!-- Block 3 -->
+    <div class="w-full bg-gray-100 bg-opacity-5 backdrop-blur-md rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"">
+        <!-- Image -->
+        <!-- <div class="group overflow-hidden bg-[#191F13] rounded-t-lg">
+        <img class="object-cover transition-all group-hover:rotate-12 group-hover:scale-125 duration-700" src="https://cdn.pixabay.com/photo/2020/04/17/14/07/athlete-5055367_960_720.jpg" alt="" />
+        </div> -->
+        <!-- Content -->
+        <div class="p-5 text-white">
+        <div>
+            <header class="text-start font-extrabold text-2xl mt-1"><span class="text-purple-500">Social</span> Anxiety Disorder</header>
+        </div>
+        <p class="py-3 mt-1 text-start text-base">
+            Social Anxiety Disorder is a mental health condition characterized by intense fear 
+            or anxiety in social situations due to the fear of being judged, embarrassed, or 
+            scrutinized by others. People with SAD often experience significant distress and 
+            avoidance of social situations, which can interfere with daily activities and relationships.
+        </p>
+        <!-- Read More Content -->
+        <div id="more_text_block3" class="hidden">
+            <header class="text-start font-extrabold text-2xl mt-1">Social Anxiety <span class="text-purple-500">Symptoms</span></header>
+            <p class="py-1 mt-2 text-start text-base">
+            Difficulty making or keeping friends, or forming romantic relationships.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Distress or impairment in social, academic, or occupational functioning.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Physical symptoms such as blushing, sweating, trembling, or nausea in social situations.
+            </p>
+        </div>
+        <!-- Read More Button -->
+        <div id="toggle-btn_block3" class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        <div id="hide-btn_block3" class="hidden inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show less
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        </div>
+    </div>
+
+    <!-- Block 4 -->
+    <div class="w-full bg-gray-100 bg-opacity-5 backdrop-blur-md rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- <div class="group overflow-hidden bg-[#191F13] rounded-t-lg">
+        <img class="object-cover transition-all group-hover:rotate-12 group-hover:scale-125 duration-700" src="https://cdn.pixabay.com/photo/2021/09/17/15/17/fruit-6633086_960_720.jpg" alt="" />
+        </div> -->
+        <!-- Content -->
+        <div class="p-5 text-white">
+        <div>
+            <header class="text-start font-extrabold text-2xl mt-1">Obsessive-<span class="text-purple-500">Compulsive </span>Disorder (OCD)</header>
+        </div>
+        <p class="py-3 mt-1 text-start text-base">
+            OCD (Obsessive-Compulsive Disorder) is a type of anxiety disorder characterized by the presence of disturbing intrusive and unwanted thoughts, 
+            images, or impulses that cause significant anxiety and compulsions. Compulsions are repetitive behaviors or mental acts that an individual 
+            feels compelled to perform to reduce the anxiety caused by disturbing intrusive thoughts. Notice the use of the word "disturbing." 
+            OCD thoughts are usually more extreme, disturbing, and irrational than other anxiety disorder thoughts.
+        </p>
+        <!-- Read More Content -->
+        <div id="more_text_block4" class="hidden">
+            <header class="text-start font-extrabold text-2xl mt-1">More on <span class="text-purple-500">OCD</span></header>
+            <p class="py-1 mt-2 text-start text-base">
+            OCD is one of the most misunderstood anxiety disorders. Because of that, here at FreeMind, we have 
+            made a separate channel for OCD. If you or your loved one are suffering from OCD or think you might be, 
+            check out the OCD section.
+            </p>
+        </div>
+        <!-- Read More Button -->
+        <div id="toggle-btn_block4" class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        <div id="hide-btn_block4" class="hidden inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show less
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        </div>
+    </div>
+
+    <!-- Block 5 -->
+    <div class="w-full bg-gray-100 bg-opacity-5 backdrop-blur-md rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- Image -->
+        <!-- <div class="group overflow-hidden bg-[#191F13] rounded-t-lg">
+        <img class="object-cover transition-all group-hover:rotate-12 group-hover:scale-125 duration-700" src="https://cdn.pixabay.com/photo/2016/01/31/19/41/apple-1172060_960_720.jpg" alt="" />
+        </div> -->
+        <!-- Content -->
+        <div class="p-5 text-white">
+        <div>
+            <header class="text-start font-extrabold text-2xl mt-1"><span class="text-purple-500">Panic</span> Disorder</header>
+        </div>
+        <p class="py-3 mt-1 text-start text-base">
+            Panic Disorder is characterized by sudden and recurrent panic attacks, which are 
+            episodes of intense fear or discomfort that occur unexpectedly. Panic attacks are 
+            usually accompanied by a sudden and intense fear or discomfort, which may be 
+            accompanied by physical symptoms such as rapid heart rate, sweating, trembling, 
+            or shortness of breath. More mild panic attacks can sometimes be referred to as 
+            anxiety attacks. Panic attacks are usually more intense and can leave your nervous 
+            system in a state of severe stress and shock.
+        </p>
+        <!-- Read More Content -->
+        <div id="more_text_block5" class="hidden">
+            <header class="text-start font-extrabold text-2xl mt-1">Panic Disorder <span class="text-purple-500">Symptoms</span></header>
+            <p class="py-1 mt-2 text-start text-base">
+            A feeling of being out of control or of going crazy.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Persistent worry about having another panic attack, which may lead to 
+            avoidance of situations or activities that may trigger anxiety.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            A strong urge to escape from the situation or environment in which the panic attack occurred. And many more symptoms.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Panic disorder was a difficult anxiety disorder that I once suffered from. I had all the symptoms 
+            listed above and many more. One of the worst feelings of having constant panic attacks is 
+            that your body is left in a state of shock. Sometimes this can last a couple of hours, 
+            and sometimes it can last days or weeks.
+            </p>
+        </div>
+        <!-- Read More Button -->
+        <div id="toggle-btn_block5" class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        <div id="hide-btn_block5" class="hidden inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show less
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        </div>
+    </div>
+
+    <!-- Block 6 -->
+    <div class="w-full bg-gray-100 bg-opacity-5 backdrop-blur-md rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <!-- <div class="group overflow-hidden bg-[#191F13] rounded-t-lg">
+        <img class="object-cover transition-all group-hover:rotate-12 group-hover:scale-125 duration-700" src="https://cdn.pixabay.com/photo/2016/01/31/19/41/apple-1172060_960_720.jpg" alt="" />
+        </div> -->
+        <!-- Content -->
+        <div class="p-5 text-white">
+        <div>
+            <header class="text-start font-extrabold text-2xl mt-1">Agorophobia</header>
+        </div>
+        <p class="py-3 mt-1 text-start text-base">
+            Agoraphobia is a type of anxiety disorder characterized by intense fear or anxiety of being in situations or places from which 
+            escape might be difficult or embarrassing. People with Agoraphobia usually fear using public transportation, being outside alone, 
+            being stuck in closed spaces, and much more. This fear or anxiety often leads to avoidance behaviors that can significantly 
+            interfere with daily activities and relationships. In more severe cases, individuals might become housebound.
+        </p>
+        <!-- Read More Content -->
+        <div id="more_text_block6" class="hidden">
+            <header class="text-start font-extrabold text-2xl mt-1">Agorophobia <span class="text-purple-500">Symptoms</span></header>
+            <p class="py-1 mt-2 text-start text-base">
+            Feeling trapped or helpless in situations that trigger fear or anxiety.
+            </p>
+            <p class="py-1 mt-2 text-start text-base">
+            Physical symptoms such as sweating, shaking, rapid heartbeat, and difficulty breathing when exposed to the object or situation.
+            <p class="py-1 mt-2 text-start text-base">
+            Avoiding certain situations and locations that may trigger anxiety or panic attacks.
+            </p>
+        </div>
+        <!-- Read More Button -->
+        <div id="toggle-btn_block6" class="cursor-pointer inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        <div id="hide-btn_block6" class="hidden inline-flex cursor-pointer items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Show less
+            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/></svg>
+        </div>
+        </div>
+    </div>
+    </div>
+
+</section>
+
+<!-- Anxiety vs AD and treatments section -->
+<section class="flex flex-row ">
+    <!-- left -->
+    <div class="w-1/2 flex justify-center">
+    <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+        <header class="text-center font-extrabold text-4xl mt-1">Anxiety <span class="text-purple-500">vs</span> Anxiety Disorders</header>
+        <p class="text-center mt-5 text-lg">
+        Now that we have listed some of the major types of anxiety disorders, it is important to distinguish the difference between mild anxiety 
+        and anxiety disorders. Mild anxiety is "healthy" anxiety that does NOT impair your life, reduce your quality of life, and leave you in 
+        constant fear or worry. In contrast, most anxiety disorders are characterized by: significant life impairment, reduced quality of life, 
+        severe fear that is constant and never ends, and much more.
+        </p>
+        <p class="text-center mt-5 text-lg">
+        If you are undiagnosed and believe that you relate more to anxiety disorders, please consult with your doctor or therapist to get diagnosed. 
+        It is important to note that many anxiety disorder symptoms overlap, and anxiety disorder online "tests" are not an accurate diagnosis. 
+        Our mission at FreeMind is not to diagnose you but to help you make a FULL recovery so you can get back to enjoying your life.
+        </p>
+        <div class="mt-14 flex justify-center">
+        {% load static %}
+        <img loading="lazy" width="100" height="100" src="{% static 'images/exited_brain.jpeg' %}" alt="check">
+        </div>
+    </div>
+    </div>
+    <!-- Right -->
+    <div class="w-1/2 flex justify-center">
+    <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-[600px] rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+        <header class="text-center font-extrabold text-4xl mt-1">Anxiety Disorder <span class="text-purple-500">Treatment</span></header>
+        <p class="text-center mt-5 text-lg">
+        Research has shown that psychotherapy, self-help therapy, and lifestyle changes such as stress management techniques 
+        and exercise are critical for someone to recover fully.
+        </p>
+        <p class="text-center mt-5 text-lg">
+        Here at FreeMind, we use a combination of great self-help therapy, which uses crucial CBT techniques and methods, 
+        stress management techniques, personalized online support, and much more to ensure our members are on track to make a full recovery.
+        </p>
+        <div class="mt-14 flex justify-center">
+            {% load static %}
+        <img loading="lazy" width="100" height="100" src="{% static 'images/exited_brain.jpeg' %}" alt="check">
+        </div>
+        <p class="text-center mt-5 text-lg">
+        Once you join our recovery support group, you will begin to understand what you are dealing with, what caused your severe anxiety, 
+        and why it is stuck on to you; this is vital to recovery. With good use of self-help therapy and techniques, I was able to make a 
+        full recovery from almost all of my anxiety disorders.
+        </p>
+    </div>
+    </div>
+</section>
+
+<!-- Notice section -->
+<section class="flex flex-row justify-center">
+    <div class="flex justify-center">
+    <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-4/5 rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+        <header class="text-center font-extrabold text-4xl mt-1">Important <span class="text-purple-500">Note!</span></header>
+        <p class="text-center mt-5 text-lg">
+        If you don't suffer from OCD or Depersonalization Derealization Disorder(DPDR), staying away from those channels is recommended. 
+        Reading up on it will not be beneficial for non-sufferers. OCD is characterized by extremely disturbing thoughts and mental or 
+        physical compulsions. DPDR is characterized by an extreme disconnection from oneself. Please take note before entering in those channels.
+        </p>
+        <div class="mt-14 flex justify-center">
+        <img loading="lazy" width="100" height="100" src="{% static 'images/warning.png' %}" alt="check">
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Why Blissful Balance section -->
+<section>
+    <div class="flex justify-center">
+    <div class="order-1 lg:order-2 flex justify-center">
+        <div class="bg-white dark:bg-cyan-900 w-[370px] md:w-[500px] xl:w-4/5 rounded-3xl p-10 shadow-[30px_30px_10px_10px_#00000024] border border-purple-500">
+        <header class="text-center font-extrabold text-4xl mt-1">Why <span class="text-purple-500">Blissful Balance</span>?</header>
+
+        <div class="flex items-center">
+            <p class="py-3 mt-5 text-center text-lg ml-3">
+            I built this website with one intent, to provide affordable anxiety disorder recovery services. When I was at my lowest, 
+            I was unable to pay my rent, let alone $300, for an anxiety recovery course. As FreeMind continues to expand, we will begin to offer additional discounts.
+            </p>
+        </div>
+
+        <div class="flex items-center">
+            <p class="py-3 mt-2 text-center text-lg ml-3">
+            Before I built FreeMind, I helped several people recover and guided them through recovery. 
+            After telling them that I was also a software engineer, they encouraged me to build a website with all the recovery techniques and information I gave them.
+            </p>
+        </div>
+
+        <div class="flex items-center">
+            <p class="py-3 mt-2 text-center text-lg ml-3">
+            FreeMind is the anxiety disorder recovery website I needed two years ago. It is affordable and continues to grow daily! 
+            FreeMind has several pages, links, audios, and much more to help you make a full recovery. (Videos coming soon)
+            </p>
+        </div>
+
+        <div class="flex items-center">
+            <p class="py-3 mt-2 text-center text-lg ml-3">
+            New information is constantly added for support members. You will get the latest up-to-date anxiety disorder recovery 
+            information (OCD and DPDR Recovery sections coming soon!). Join hundreds of others in recovery today!
+            </p>
+        </div>
+
+        <p class="text-center font-extrabold text-lg mt-3">
+            Register for FREE Today!
+        </p>
+        <div class="flex justify-around mt-3 md:justify-center md:gap-24">
+            <a href="#">
+            <button class="bg-gradient-to-r from-purple-500 to-blue-500 hover:text-white hover:bg-purple-600 rounded-full py-3 px-6 mt-4 font-medium text-white w-40 xl:w-48">More About Member Benefits</button>
+            </a>
+            <a href="#">
+            <button class="bg-gradient-to-r from-purple-500 to-blue-500 hover:text-white hover:bg-purple-600 rounded-full py-3 px-6 mt-4 font-medium text-white w-40 xl:w-48">Start your recovery today!</button>
+            </a>
+        </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+{% endblock %}
+

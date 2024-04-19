@@ -1,0 +1,32 @@
+venv environment:
+https://ioflood.com/blog/python-activate-venv/#:~:text=You%20can%20do%20this%20via,directory%20of%20your%20virtual%20environment.&text=In%20this%20example%2C%20we're,venv'%20in%20this%20case).
+python3 -m venv <app name>
+source <app name>/bin/activate
+
+Tailwind css and Django:
+https://www.photondesigner.com/articles/tailwind-with-django?ref=yt-X-IecxKV_pI
+
+
+Heroku - Hosting Postgresql DB 
+        heroku:
+        mattfourie3@gmail.com
+        C~f.3K@w2sU*E-
+
+Retool - displaying data from DB
+
+
+Useful commands:
+
+1 - python3 manage.py migrate
+
+2 - ./tailwindcss -i ./blissful_balance/static/css/input.css -o ./blissful_balance/static/css/output.css --watch
+
+3 - python3 manage.py runserver
+
+4 - source .venv/bin/activate
+
+
+
+
+
+can i use bootstrap and tailwind css simultaniously, so tailwind on some html files and bootstrapon others?
